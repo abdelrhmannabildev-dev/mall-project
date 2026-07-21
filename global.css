@@ -60,33 +60,28 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
   min-height: 100vh;
   background: var(--bg);
   color: var(--text);
   font-family: var(--sans);
+
 }
-/* html, body {
+html, body {
     overflow-x: hidden;
-} */
+}
 main {
   min-height: 80vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 80px; */
-  background: radial-gradient(circle at top left, rgba(79, 70, 229, 0.12)
-  , transparent 26%), radial-gradient(circle at bottom right, rgba(37, 99, 235, 0.08),
-   transparent 30%), var(--bg);
+  background: var(--bg);
 }
 
-#root {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
 
 img {
   max-width: 100%;
@@ -103,7 +98,6 @@ button {
 ul {
   list-style: none;
   display: flex;
-  gap: 20px;
 }
 a {
   text-decoration: none;

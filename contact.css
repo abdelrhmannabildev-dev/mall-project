@@ -41,13 +41,17 @@
     align-items: center;
     gap: 18px;
 
+    width: 100%;
     background: var(--surface-strong);
     border: 1px solid var(--border);
     border-radius: 14px;
 
     padding: 18px;
 }
-
+.contact-details p,
+.contact-info li {
+    word-break: break-word;
+}
 .contact-item span {
     font-size: 1.8rem;
 }
