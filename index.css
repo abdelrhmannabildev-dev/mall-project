@@ -1,5 +1,6 @@
 .hero{
     min-height: 70vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,8 +8,6 @@
     gap: 1rem;
     background: url("mall.webp");
     background-size: cover;
-    background-position: center;
-    width: 100%;
     color: var(--text-h);
     
 }
@@ -21,20 +20,21 @@
 
 }
 
-.btn{
+.hero .btn{
     background-color: var(--secondary);
     padding: 10px 20px;
     border-radius: 4rem;
     transition: all .3s ease-in-out;
 
 }
-.btn:hover{
+.hero .btn:hover{
     background-color: var(--primary);
     translate: 0 -5px;
     scale: 1.1;
 }
 /* ===== Sections ===== */
 .brands {
+    width: 100%;
     padding: 80px 0;
     background: var(--surface-strong);
     text-align: center;
@@ -50,26 +50,34 @@
     margin-bottom: 3rem;
 }
 
-.slider {
-    overflow-x: hidden;
-    position: relative;
-    padding-top: 1rem;
-    margin: 1rem auto;
+.slider{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
 }
-
-.brand-logos {
+.slider::-webkit-scrollbar {
+    display: none;
+}
+.slider{
     display: flex;
-    /* width: max-content; */
-    gap: 1.5rem;
 
-    animation: scroll 20s linear infinite;
 }
+.brand-logos{
+    display: flex;
+    gap: 1rem;
+}
+.group{
+    display: flex;
+    gap: 1rem;
+    min-width: max-content;
+    animation: scroll 8s linear infinite;
 
+}
 .brand-logo {
-    width: 300px;
+    width: 350px;
+    min-width: 300px;
     height: 180px;
-
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
 
     display: flex;
     justify-content: center;
@@ -100,9 +108,10 @@
     }
 
     to {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
-}/* video section */
+}
+/* video section */
 .video-section{
     padding: 80px 10%;
     text-align: center;
@@ -181,12 +190,13 @@ video {
 
 /* ::after */
 .featured-stores::after,
-.offers-preview::after{
+.offers-preview::after,
+.video-section:after{
     content: "";
     display: block;
-    width: 40%;
-    height: .1rem;
-    background-color: var(--primary);
+    width: 70%;
+    height: .15rem;
+    background-color: var(--pri);
     margin: 0 auto;
     margin-top: 1rem;
 }

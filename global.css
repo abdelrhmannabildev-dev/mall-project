@@ -70,9 +70,9 @@ body {
   font-family: var(--sans);
 
 }
-html, body {
+/* html, body {
     overflow-x: hidden;
-}
+} */
 main {
   min-height: 80vh;
   width: 100%;
