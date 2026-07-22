@@ -1,0 +1,242 @@
+/* ==========================
+   Store Hero
+========================== */
+
+.store-hero{
+    min-height: 45vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+        url("mall.webp");
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.store-hero .hero-text{
+    max-width: 700px;
+
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(10px);
+
+    padding: 2.5rem;
+    border-radius: 20px;
+
+    color: white;
+}
+
+.store-hero h1{
+    font-size: clamp(2rem,5vw,3.5rem);
+    margin-bottom: 1rem;
+}
+
+.store-hero p{
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.store-hero .btn{
+    display:inline-block;
+
+    background: var(--primary);
+    color:white;
+
+    padding:.9rem 2rem;
+
+    border-radius:999px;
+
+    transition:.3s;
+}
+
+.store-hero .btn:hover{
+    background:var(--accent);
+    transform:translateY(-4px);
+}
+
+
+/* ==========================
+   Categories
+========================== */
+
+.store-categories{
+
+    width:min(1200px,90%);
+    margin:5rem auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+
+    gap:1.5rem;
+}
+
+.category-card{
+
+    background:var(--surface-bg);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:2rem 1rem;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+    cursor:pointer;
+}
+
+.category-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--accent);
+
+    background:var(--accent-soft);
+}
+
+.category-card img{
+
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+
+    margin-bottom:1rem;
+}
+
+.category-card h3{
+
+    color:var(--text-h);
+}
+
+
+/* ==========================
+   Sections
+========================== */
+
+.featured-stores,
+.all-stores,
+.mall-services,
+.mall-map{
+
+    width:min(1200px,90%);
+
+    margin:5rem auto;
+
+    text-align:center;
+}
+
+.featured-stores h2,
+.all-stores h2,
+.mall-services h2,
+.mall-map h2{
+
+    color:var(--text-h);
+
+    margin-bottom:.7rem;
+}
+
+.featured-stores>p,
+.all-stores>p{
+
+    color:var(--muted);
+
+    margin-bottom:2.5rem;
+}
+
+
+/* ==========================
+   Store Cards
+========================== */
+
+.store-card{
+
+    flex:1 1 260px;
+
+    max-width:320px;
+}
+
+.store-card img{
+
+    width:100%;
+    
+
+    object-fit:scale-down;
+
+    border-radius:12px;
+
+    margin-bottom:1rem;
+}
+
+.store-card h3{
+
+    color:var(--text-h);
+
+    margin-bottom:.5rem;
+}
+
+.store-card p{
+
+    color:var(--muted);
+
+    margin-bottom:.75rem;
+}
+
+.store-card span{
+
+    color:var(--primary);
+
+    font-weight:600;
+}
+
+
+/* ==========================
+   Mall Map
+========================== */
+
+.mall-map img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    margin-top:2rem;
+}
+
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:768px){
+
+    .store-hero{
+
+        min-height:35vh;
+    }
+
+    .store-hero .hero-text{
+
+        width:90%;
+
+        padding:2rem;
+    }
+
+    .category-card img{
+
+        width:60px;
+        height:60px;
+    }
+
+}

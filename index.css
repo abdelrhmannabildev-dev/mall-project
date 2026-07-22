@@ -13,7 +13,8 @@
 }
 
 .hero-text {
-    background-color: var(--bg);
+    background: rgba(57, 89, 216, 0.244);
+
     padding: 30px 40px;
     border-radius: 2rem;
     line-height: 1.6;
@@ -63,6 +64,7 @@
 
 }
 .brand-logos{
+    padding: 1rem 0;
     display: flex;
     gap: 1rem;
 }
@@ -73,6 +75,7 @@
     animation: scroll 8s linear infinite;
 
 }
+
 .brand-logo {
     width: 350px;
     min-width: 300px;

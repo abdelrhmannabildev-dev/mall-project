@@ -40,7 +40,7 @@ main{
     text-align: center;
 }
 .hero-text, .offer-text{
-    background-color: var(--surface-bg);
+    background: rgba(57, 121, 216, 0.721);
     padding: 30px 40px;
     border-radius: 2rem;
     line-height: 1.6;
