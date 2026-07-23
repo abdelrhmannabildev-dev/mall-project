@@ -5,7 +5,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("mall.webp");
+    background:
+        linear-gradient( rgba(232, 230, 230, 0.55), rgba(0,0,0,.55)),
+        url("mall.webp");
     width: 100%;
     text-align: center;
     background-size: cover;
