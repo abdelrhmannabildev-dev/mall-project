@@ -1,10 +1,7 @@
-/* ===========================
-   Store Hero
-=========================== */
+/*Store Hero*/
 
 .store-hero{
     min-height: 45vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,12 +14,9 @@
 
 .store-hero .hero-text{
     max-width: 700px;
-
     color: white;
-
     background: rgba(255, 255, 255, 0.167);
     backdrop-filter: blur(10px);
-
     padding: 2rem 3rem;
     border-radius: 20px;
 }
@@ -40,13 +34,10 @@
 
 .store-hero .btn{
     display: inline-block;
-
     background: var(--primary);
     color: white;
-
     padding: .9rem 2rem;
     border-radius: 999px;
-
     transition: .3s;
 }
 
@@ -55,14 +46,11 @@
     transform: translateY(-4px);
 }
 
-/* ===========================
-   Categories
-=========================== */
+/*  Categories */
 
 .store-categories{
     width: min(1200px,90%);
     margin: 5rem auto;
-
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
     gap: 1.5rem;
